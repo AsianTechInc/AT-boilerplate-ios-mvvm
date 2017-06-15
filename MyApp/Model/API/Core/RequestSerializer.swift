@@ -1,6 +1,6 @@
 //
 //  RequestSerializer.swift
-//  CM
+//  MyApp
 //
 //  Created by DaoNV on 7/8/16.
 //  Copyright © 2016 AsianTech Co., Ltd. All rights reserved.
