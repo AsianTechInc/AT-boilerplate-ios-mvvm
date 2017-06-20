@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftUtils
 
 enum Process {
     case encode
@@ -14,9 +15,6 @@ enum Process {
 }
 
 extension String {
-    var len: Int { return characters.count }
-    var host: String? { return (try? asURL())?.host }
-
     func base64(_ method: Process) -> String? {
         switch method {
         case .encode:
@@ -26,9 +24,5 @@ extension String {
             guard let data = Data(base64Encoded: self) else { return nil }
             return String(data: data, encoding: .utf8)
         }
-    }
-
-    var trimmed: String {
-        return trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
     }
 }

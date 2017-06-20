@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+import SwiftUtils
 
 typealias Network = NetworkReachabilityManager
 

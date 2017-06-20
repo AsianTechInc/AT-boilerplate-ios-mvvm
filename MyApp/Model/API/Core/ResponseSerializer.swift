@@ -10,7 +10,7 @@ import Alamofire
 import RealmSwift
 import ObjectMapper
 import RealmS
-import SwiftyJSON
+import SwiftUtils
 
 extension Request {
     static func responseJSONSerializer(log: Bool = true,

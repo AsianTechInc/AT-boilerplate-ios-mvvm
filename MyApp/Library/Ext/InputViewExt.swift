@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftUtils
 
 extension UITextView {
     var string: String { return text ?? "" }

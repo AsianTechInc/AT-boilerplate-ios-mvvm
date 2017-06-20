@@ -10,8 +10,10 @@ import UIKit
 import RealmSwift
 import AlamofireNetworkActivityIndicator
 
+let networkIndicator = NetworkActivityIndicatorManager.shared
+
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+final class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
@@ -25,14 +27,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
         // Config Network Activity Indicator
-        NetworkActivityIndicatorManager.shared.isEnabled = true
-        NetworkActivityIndicatorManager.shared.startDelay = 0
+        networkIndicator.isEnabled = true
+        networkIndicator.startDelay = 0
 
         Realm.Configuration.defaultConfiguration = {
             var config = Realm.Configuration.defaultConfiguration
             config.deleteRealmIfMigrationNeeded = true
             return config
         }()
+
         return true
     }
 }
