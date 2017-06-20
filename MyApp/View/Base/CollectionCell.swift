@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MVVM
 
-class CollectionCell: UICollectionViewCell {
+class CollectionCell: UICollectionViewCell, MVVM.View {
 }

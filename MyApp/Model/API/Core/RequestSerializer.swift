@@ -16,7 +16,6 @@ extension ApiManager {
                  parameters: [String: Any]? = nil,
                  headers: [String: String]? = nil,
                  completion: Completion?) -> Request? {
-
         guard Network.shared.isReachable else {
             completion?(.failure(Api.Error.network))
             return nil
