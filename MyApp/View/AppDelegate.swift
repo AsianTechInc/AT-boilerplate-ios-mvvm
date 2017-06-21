@@ -17,25 +17,31 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    static var shared: AppDelegate = {
+    static let shared: AppDelegate = {
         guard let shared = UIApplication.shared.delegate as? AppDelegate else {
-            fatalError("Unexpected error occurred.")
+            fatalError("Cannot cast `UIApplication.shared.delegate` to `AppDelegate`.")
         }
         return shared
     }()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        configNetwork()
+        configDatabase()
+        return true
+    }
+}
 
-        // Config Network Activity Indicator
+extension AppDelegate {
+    fileprivate func configNetwork() {
         networkIndicator.isEnabled = true
         networkIndicator.startDelay = 0
+    }
 
+    fileprivate func configDatabase() {
         Realm.Configuration.defaultConfiguration = {
             var config = Realm.Configuration.defaultConfiguration
             config.deleteRealmIfMigrationNeeded = true
             return config
         }()
-
-        return true
     }
 }
