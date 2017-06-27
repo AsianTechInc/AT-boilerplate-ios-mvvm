@@ -41,7 +41,6 @@ target 'MyApp' do
 #    pod 'Crashlytics', '~> 3.7.0'
 
     target 'MyAppTests' do
-        project 'MyApp'
-        inherit! :search_paths
+        inherit! :complete
     end
 end

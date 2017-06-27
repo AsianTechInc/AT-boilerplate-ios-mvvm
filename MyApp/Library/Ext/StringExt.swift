@@ -15,6 +15,12 @@ enum Process {
 }
 
 extension String {
+    var len: Int { return characters.count }
+
+    var trimmed: String {
+        return trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+    }
+
     func base64(_ method: Process) -> String? {
         switch method {
         case .encode:
