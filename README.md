@@ -20,10 +20,6 @@ Testimonials
 > **“I'm using it for a year now and many projects, it's an awesome boilerplate and the project is well maintained!”**
 > — Mr Dai Ho V.
 
-<h4 align="center">Project Structure</h4>
-
-![](https://lh6.googleusercontent.com/-KQTmCFNK6MM/U7OZpznjDuI/AAAAAAAAERc/h3jR27Uy1lE/w1366-h1006-no/Screenshot+2014-07-02+01.32.22.png)
-
 Table of Contents
 -----------------
 
@@ -51,12 +47,32 @@ here is another great tutorial for complete beginners - [Getting Started With No
 
 ## Project Structure
 
-| Name                               | Description                                                  |
-| ---------------------------------- | ------------------------------------------------------------ |
-| **Define**/passport.js             | Passport Local and OAuth strategies, plus login middleware.  |
+| Name | Description |
+| --- | --- |
+| **Define**/ | The most time static values will be put here, such as third party keys, colors, fonts... |
+| **Define**/Key.swift | Third party keys/credientials will be defined here. |
+| **Define**/String.swift | Localizable strings will be defined here. |
+| **Define**/Color.swift | Colors will be defined here. |
+| **Define**/Font.swift | Fonts will be defined here. |
+| **View**/ |  |
+| **View**/AppDelegate.swift |  |
+| **View**/Base/ |  |
+| **View**/Storyboard/ |  |
+| **View**/Controls/ |  |
+| **View**/Controllers/ |  |
+| **ViewModel**/ |  |
+| **Model**/ |  |
+| **Model**/API/ |  |
+| **Define**/API/Core/ |  |
+| **Model**/Schema/ |  |
+| **Library**/ |  |
+| **Library**/Ext/ |  |
+| **Resources**/ |  |
+| **Supports**/ |  |
+| **Supports**/Info.plist |  |
 
-**Note:** There is no preference how you name or structure your views.
-You could place all your templates in a top-level `views` directory without
+**Note:** There is no preference how you name or structure your controllers.
+You could place all your controllers in a top-level `Controllers` directory without
 having a nested folder structure, if that makes things easier for you.
 Just don't forget to update `extends ../layout`  and corresponding
 `res.render()` paths in controllers.
