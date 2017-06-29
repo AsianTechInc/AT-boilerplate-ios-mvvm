@@ -25,93 +25,58 @@ Table of Contents
 
 - [Prerequisites](#prerequisites)
 - [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
+- [Workspace Preparing](#workspace-preparing)
 - [Obtaining the Defines](#obtaining-the-defines)
 - [List of Frameworks](#list-of-frameworks)
 - [Useful Tools and Resources](#useful-tools-and-resources)
-- [FAQ](#faq)
-- [How It Works](#how-it-works-mini-guides)
-- [Beta Deployment](#beta-deployment)<!--- - [Changelog](#changelog) -->
-- [License](#license)
+<!-- - [FAQ](#faq) -->
+- [Beta Deployment](#beta-deployment)
+<!-- - [Changelog](#changelog) -->
+- [Contributing](contributing)
 
 ## Prerequisites
 
 - [MacOS Sierra (10.12.x)](https://www.apple.com/lae/macos/sierra/)
-- [Xcode 8.3.x](https://developer.apple.com/download/)
+- [Xcode 8.3.x](https://developer.apple.com/download/) ~ Swift 3.1
 - [CocoaPods 1.2.x](https://cocoapods.org/#install)
-
-**Note:** If you are new to Node or Express, I recommend to watch
-[Node.js and Express 101](https://www.youtube.com/watch?v=BN0JlMZCtNU)
-screencast by Alex Ford that teaches Node and Express from scratch. Alternatively,
-here is another great tutorial for complete beginners - [Getting Started With Node.js, Express, MongoDB](http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/).
 
 ## Project Structure
 
 | Name | Description |
 | --- | --- |
 | **Define**/ | The most time static values will be put here, such as third party keys, colors, fonts... |
-| **Define**/Key.swift | Third party keys/credientials will be defined here. |
-| **Define**/String.swift | Localizable strings will be defined here. |
-| **Define**/Color.swift | Colors will be defined here. |
-| **Define**/Font.swift | Fonts will be defined here. |
-| **View**/ |  |
-| **View**/AppDelegate.swift |  |
-| **View**/Base/ |  |
-| **View**/Storyboard/ |  |
-| **View**/Controls/ |  |
-| **View**/Controllers/ |  |
-| **ViewModel**/ |  |
-| **Model**/ |  |
-| **Model**/API/ |  |
-| **Define**/API/Core/ |  |
-| **Model**/Schema/ |  |
-| **Library**/ |  |
-| **Library**/Ext/ |  |
-| **Resources**/ |  |
-| **Supports**/ |  |
-| **Supports**/Info.plist |  |
+| **Define**/Key.swift | Third party keys/credientials will be defined here |
+| **Define**/String.swift | Localizable strings will be defined here |
+| **Define**/Color.swift | Colors will be defined here |
+| **Define**/Font.swift | Fonts will be defined here |
+| **View**/ | Everything relative directly to UI |
+| **View**/Base/ | Base classes for view controller, popup controller... |
+| **View**/Controls/ | Custom controls: label, button, cell... |
+| **View**/Controllers/ | View controllers |
+| **ViewModel**/ | Data holding & logic handling for view controller |
+| **Model**/ | Business objects and business logic will be put here |
+| **Model**/API/ | API request will be handled here |
+| **Model**/Schema/ | ORM objects will be defined here |
+| **Library**/ | Helper, Utils, Extension... or frameworks which cannot be put in CocoaPods (ex: modified, no podspec found...) |
+| **Resources**/ | Image, video, audio, font, `Localizable.strings`... |
+| **Supports**/ | Application info, target configuration, bridging... |
 
-**Note:** There is no preference how you name or structure your controllers.
-You could place all your controllers in a top-level `Controllers` directory without
-having a nested folder structure, if that makes things easier for you.
-Just don't forget to update `extends ../layout`  and corresponding
-`res.render()` paths in controllers.
+**Note:** You should place your controllers in `Controllers` directory with a nested folder structure.
 
-## Getting Started
+## Workspace Preparing
 
-The easiest way to get started is to clone the repository:
+- `./scripts/install` - this script will install
+    - [brew](https://github.com/Homebrew/brew) command & necessary formulas
+    - [rbenv](https://github.com/rbenv/rbenv) command & necessary gems
+    - [pod](https://cocoapods.org/) command & project's dependences
 
-```bash
-# Get the latest snapshot
-git clone --depth=1 https://github.com/sahat/hackathon-starter.git myproject
-
-# Change directory
-cd myproject
-
-# Install NPM dependencies
-npm install
-
-# Or, if you prefer to use `yarn` instead of `npm`
-yarn install
-
-# Then simply start your app
-node app.js
-```
-
-**Note:** I highly recommend installing [Nodemon](https://github.com/remy/nodemon).
-It watches for any changes in your  node.js app and automatically restarts the
-server. Once installed, instead of `node app.js` use `nodemon app.js`. It will
-save you a lot of time in the long run, because you won't need to manually
-restart the server each time you make a small change in code. To install, run
-`sudo npm install -g nodemon`.
+- `open *.xcw*` - this command will open generated workspace with Xcode.
 
 ## Obtaining the Defines
 
-To use any of the included APIs or OAuth authentication methods, you will need to obtain appropriate credentials: Client ID, Client Secret, API Key, or
-Username & Password. You will need to go through each provider to generate new credentials.
+To use any of the included APIs or third parties, you will need to obtain appropriate credentials: Client ID, Client Secret, API Key, or Username & Password... You will need to go through each provider to generate new credentials.
 
-> I have included dummy keys for all API examples to get you up and running even faster. But don't forget to update
-them with *your credentials* when you are ready to deploy an app.
+> Don't forget to update all API keys with *your credentials* when you are ready to deploy an app.
 
 ## List of Frameworks
 
@@ -144,24 +109,16 @@ them with *your credentials* when you are ready to deploy an app.
 - [SwiftLint](https://github.com/realm/SwiftLint) - A tool to enforce Swift style and conventions.
 - [Ray Wenderlich](https://www.raywenderlich.com/) - The largest collection of Swift & iOS video tutorials anywhere.
 - [design+code](https://designcode.io/iosdesign-guidelines) - iOS 10 Design Guidelines for iPhone and iPad.
+- [Fabric](https://docs.fabric.io/apple/fabric/overview.html) - Fabric is a platform that helps your mobile team build better apps, understand your users, and grow your business.
+- [TestFlight](https://help.apple.com/itunes-connect/developer/#/devdc42b26b8) - TestFlight beta testing lets you distribute beta builds of your app to testers and collect feedback.
+- [DeployGate](https://deploygate.com/docs/ios_sdk?locale=en) - DeployGate makes it easy to share your in-development iOS and Android apps, allowing developers to seamlessly progress through the prototyping, development, testing, and marketing stages of app distribution.
 
+<!--
 ## FAQ
 
 ### Question?
 Answer.
-
-## How It Works (mini guides)
-
-This section is intended for giving you a detailed explanation about
-how a particular functionality works. Maybe you are just curious about how it works, or maybe you are lost and confused while reading the code, I hope it provides some guidance to you.
-
-### Todo
-
-## Beta Deployment
-
-- [Fabric](https://docs.fabric.io/apple/fabric/overview.html)
-- [TestFlight](https://help.apple.com/itunes-connect/developer/#/devdc42b26b8)
-- [DeployGate](https://deploygate.com/docs/ios_sdk?locale=en)
+-->
 
 <!--
 ## Changelog
@@ -174,15 +131,3 @@ The first version.
 
 If something is unclear, confusing, or needs to be refactored, please let me know. Pull requests are always welcome, but due to the opinionated nature of this project, I cannot accept every pull request. Please open an issue before submitting a pull request. This project uses [RayWenderlich Swift Style Guide](https://github.com/raywenderlich/swift-style-guide) with a
 few minor exceptions. If you are submitting a pull request that involves Pug templates, please make sure you are using *spaces*, not tabs.
-
-## License
-
-The MIT License (MIT)
-
-Copyright (c) 2017 Asian Tech Co., Ltd.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
