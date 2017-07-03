@@ -3,8 +3,6 @@
 IOS MVVM Project Boilerplate
 ============================
 
-> Looking for MVC boilerplate? [Click here](https://github.com/asiantechinc/at-boilerplate-ios-mvc).
-
 *Every app we build is unique, but best practices should be consistent between projects. Here on [AsianTech](http://asiantech.vn) iOS team, we’ve been baking more and more of those best practices into a template we use for starting any new project.
 This ensures consistency in our work: we don’t repeat mistakes, we use known libraries that we all have some experience with, and any one of us can get up to speed on a new project quickly because things are organized in a way we recognize.*
 
@@ -28,10 +26,8 @@ Table of Contents
 - [Workspace Preparing](#workspace-preparing)
 - [Obtaining the Defines](#obtaining-the-defines)
 - [List of Frameworks](#list-of-frameworks)
-- [Useful Tools and Resources](#useful-tools-and-resources)
-<!-- - [FAQ](#faq) -->
-- [Beta Deployment](#beta-deployment)
-<!-- - [Changelog](#changelog) -->
+- [Useful Tools and Resources](#useful-tools-and-resources) <!-- - [FAQ](#faq) -->
+- [Beta Deployment](#beta-deployment) <!-- - [Changelog](#changelog) -->
 - [Contributing](contributing)
 
 ## Prerequisites
