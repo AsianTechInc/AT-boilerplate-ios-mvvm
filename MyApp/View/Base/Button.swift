@@ -20,9 +20,9 @@ class Button: UIButton {
     }
 
     private func configView() {
-        titleLabel?.font = Define.Font.buttonTextLabel
+        titleLabel?.font = App.Font.buttonTextLabel
         for state: UIControlState in [.normal, .highlighted, .selected, .disabled] {
-            setTitleColor(Define.Color.button(state: state), for: state)
+            setTitleColor(App.Color.button(state: state), for: state)
         }
     }
 }

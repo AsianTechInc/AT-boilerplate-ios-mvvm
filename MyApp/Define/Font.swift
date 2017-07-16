@@ -14,7 +14,7 @@
 
 import UIKit
 
-extension Define {
+extension App {
     struct Font {
         static var navigationBar: UIFont {
             return .boldSystemFont(ofSize: 14)

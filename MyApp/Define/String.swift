@@ -14,7 +14,7 @@
 import Foundation
 import SwiftUtils
 
-extension Define {
+extension App {
     struct String {
         static let error = "ERROR".localized()
         static let ok = "OK".localized()

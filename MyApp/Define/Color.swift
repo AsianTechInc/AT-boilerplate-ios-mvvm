@@ -13,7 +13,7 @@
 
 import UIKit
 
-extension Define {
+extension App {
     struct Color {
         static let navigationBar = UIColor.black
         static let tableHeaderView = UIColor.gray
