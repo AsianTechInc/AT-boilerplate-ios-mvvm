@@ -41,7 +41,7 @@ Table of Contents
 | Name | Description |
 | --- | --- |
 | **Define**/ | The most time static values will be put here, such as third party keys, colors, fonts... |
-| **Define**/Key.swift | Third party keys/credientials will be defined here |
+| **Define**/App.swift | App or third party keys/credientials will be defined here |
 | **Define**/String.swift | Localizable strings will be defined here |
 | **Define**/Color.swift | Colors will be defined here |
 | **Define**/Font.swift | Fonts will be defined here |
