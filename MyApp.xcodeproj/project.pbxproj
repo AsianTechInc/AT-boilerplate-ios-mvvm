@@ -15,7 +15,7 @@
 		EC2C488D1EAF011C00B22F4B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2C488C1EAF011C00B22F4B /* Utils.swift */; };
 		EC332A481EA0A8CB0011DF1E /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC332A471EA0A8CB0011DF1E /* Api.swift */; };
 		EC5337B51EF7845700ACE038 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5337B41EF7845700ACE038 /* Color.swift */; };
-		EC5337B71EF78CD800ACE038 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5337B61EF78CD800ACE038 /* Config.swift */; };
+		EC5337B71EF78CD800ACE038 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5337B61EF78CD800ACE038 /* App.swift */; };
 		EC5337BA1EF78E4D00ACE038 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC5337BC1EF78E4D00ACE038 /* Localizable.strings */; };
 		EC5337BE1EF78FEA00ACE038 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5337BD1EF78FEA00ACE038 /* Font.swift */; };
 		EC5337C11EF7939C00ACE038 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5337C01EF7939C00ACE038 /* TableCell.swift */; };
@@ -77,7 +77,7 @@
 		EC2C488C1EAF011C00B22F4B /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		EC332A471EA0A8CB0011DF1E /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		EC5337B41EF7845700ACE038 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		EC5337B61EF78CD800ACE038 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		EC5337B61EF78CD800ACE038 /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		EC5337BB1EF78E4D00ACE038 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EC5337BD1EF78FEA00ACE038 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		EC5337C01EF7939C00ACE038 /* TableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
@@ -164,7 +164,7 @@
 		EC01053D1E8F8ADF00CE013D /* Define */ = {
 			isa = PBXGroup;
 			children = (
-				EC5337B61EF78CD800ACE038 /* Config.swift */,
+				EC5337B61EF78CD800ACE038 /* App.swift */,
 				ECEC0C571ED44C5D00F6760A /* String.swift */,
 				EC5337B41EF7845700ACE038 /* Color.swift */,
 				EC5337BD1EF78FEA00ACE038 /* Font.swift */,
@@ -568,7 +568,7 @@
 				EC5337C11EF7939C00ACE038 /* TableCell.swift in Sources */,
 				ECF23AC31E9B9264008C23C1 /* StringExt.swift in Sources */,
 				ECEC0C5E1ED44D7700F6760A /* MapperExt.swift in Sources */,
-				EC5337B71EF78CD800ACE038 /* Config.swift in Sources */,
+				EC5337B71EF78CD800ACE038 /* App.swift in Sources */,
 				ECC5B2CD1EF906CA001A97BC /* ViewController.swift in Sources */,
 				EC5337C31EF793B100ACE038 /* CollectionCell.swift in Sources */,
 				ECF23ABA1E9B89B2008C23C1 /* RequestSerializer.swift in Sources */,
