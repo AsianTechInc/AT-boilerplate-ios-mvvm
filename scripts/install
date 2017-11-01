@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# DEV ENV
+# DEVELOPMENT ENVIRONMENT
 
 # update submodule if need
 if [[ "$CI" != 'true' ]]; then
