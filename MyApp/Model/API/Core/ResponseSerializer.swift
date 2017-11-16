@@ -7,9 +7,7 @@
 //
 
 import Alamofire
-import RealmSwift
 import ObjectMapper
-import RealmS
 import SwiftUtils
 
 extension Request {
@@ -45,7 +43,6 @@ extension Request {
                               code: statusCode,
                               message: "Unknown HTTP status code received (\(statusCode)).")
             }
-
             return .failure(err)
         }
 

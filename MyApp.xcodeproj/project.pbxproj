@@ -11,7 +11,6 @@
 		D028ADD12AA8716ECB14FFD9 /* Pods_MyApp_MyAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49F1AB05FCB88523C52A0ED /* Pods_MyApp_MyAppTests.framework */; };
 		EC0105521E8F8AE000CE013D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC0105401E8F8ADF00CE013D /* Assets.xcassets */; };
 		EC0105541E8F8AE000CE013D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0105441E8F8ADF00CE013D /* AppDelegate.swift */; };
-		EC064CDE1EE55CF200B79200 /* ViewModelExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC064CDD1EE55CF200B79200 /* ViewModelExt.swift */; };
 		EC2C488D1EAF011C00B22F4B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2C488C1EAF011C00B22F4B /* Utils.swift */; };
 		EC332A481EA0A8CB0011DF1E /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC332A471EA0A8CB0011DF1E /* Api.swift */; };
 		EC5337B51EF7845700ACE038 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5337B41EF7845700ACE038 /* Color.swift */; };
@@ -33,7 +32,6 @@
 		ECF23AB41E9B869B008C23C1 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF23AB11E9B869B008C23C1 /* ApiManager.swift */; };
 		ECF23ABA1E9B89B2008C23C1 /* RequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF23AB71E9B89B2008C23C1 /* RequestSerializer.swift */; };
 		ECF23ABB1E9B89B2008C23C1 /* ResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF23AB81E9B89B2008C23C1 /* ResponseSerializer.swift */; };
-		ECF23ABC1E9B89B2008C23C1 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF23AB91E9B89B2008C23C1 /* Session.swift */; };
 		ECF23ABE1E9B8A6A008C23C1 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF23ABD1E9B8A6A008C23C1 /* Error.swift */; };
 		ECF23AC31E9B9264008C23C1 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF23AC21E9B9264008C23C1 /* StringExt.swift */; };
 		F1C6352C1EF141F300D0A1A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1C6352B1EF141F300D0A1A0 /* LaunchScreen.storyboard */; };
@@ -73,7 +71,6 @@
 		EC0105421E8F8ADF00CE013D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC0105441E8F8ADF00CE013D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC01055C1E8F8AF000CE013D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC064CDD1EE55CF200B79200 /* ViewModelExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelExt.swift; sourceTree = "<group>"; };
 		EC2C488C1EAF011C00B22F4B /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		EC332A471EA0A8CB0011DF1E /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		EC5337B41EF7845700ACE038 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -97,7 +94,6 @@
 		ECF23AB11E9B869B008C23C1 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		ECF23AB71E9B89B2008C23C1 /* RequestSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestSerializer.swift; sourceTree = "<group>"; };
 		ECF23AB81E9B89B2008C23C1 /* ResponseSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseSerializer.swift; sourceTree = "<group>"; };
-		ECF23AB91E9B89B2008C23C1 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		ECF23ABD1E9B8A6A008C23C1 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		ECF23AC21E9B9264008C23C1 /* StringExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
 		F1C6352B1EF141F300D0A1A0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -313,7 +309,6 @@
 				ECF23ABD1E9B8A6A008C23C1 /* Error.swift */,
 				ECF23AB71E9B89B2008C23C1 /* RequestSerializer.swift */,
 				ECF23AB81E9B89B2008C23C1 /* ResponseSerializer.swift */,
-				ECF23AB91E9B89B2008C23C1 /* Session.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -333,7 +328,6 @@
 				ECEC0C5D1ED44D7700F6760A /* MapperExt.swift */,
 				ECF23AC21E9B9264008C23C1 /* StringExt.swift */,
 				ECEC0C591ED44D4100F6760A /* UIViewControllerExt.swift */,
-				EC064CDD1EE55CF200B79200 /* ViewModelExt.swift */,
 				EC6FD3091EF8B71200CB6642 /* DefaultsExt.swift */,
 			);
 			path = Ext;
@@ -400,7 +394,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Asian Tech Co., Ltd.";
 				TargetAttributes = {
 					ECCCCB171E7A40D00073D923 = {
@@ -573,7 +567,6 @@
 				EC5337C31EF793B100ACE038 /* CollectionCell.swift in Sources */,
 				ECF23ABA1E9B89B2008C23C1 /* RequestSerializer.swift in Sources */,
 				ECC5B2CB1EF90495001A97BC /* Button.swift in Sources */,
-				ECF23ABC1E9B89B2008C23C1 /* Session.swift in Sources */,
 				EC0105541E8F8AE000CE013D /* AppDelegate.swift in Sources */,
 				EC6FD30A1EF8B71200CB6642 /* DefaultsExt.swift in Sources */,
 				EC332A481EA0A8CB0011DF1E /* Api.swift in Sources */,
@@ -582,7 +575,6 @@
 				ECEC0C5A1ED44D4100F6760A /* UIViewControllerExt.swift in Sources */,
 				ECEC0C581ED44C5D00F6760A /* String.swift in Sources */,
 				EC5337BE1EF78FEA00ACE038 /* Font.swift in Sources */,
-				EC064CDE1EE55CF200B79200 /* ViewModelExt.swift in Sources */,
 				ECF23ABB1E9B89B2008C23C1 /* ResponseSerializer.swift in Sources */,
 				ECF23ABE1E9B8A6A008C23C1 /* Error.swift in Sources */,
 				EC5337B51EF7845700ACE038 /* Color.swift in Sources */,
@@ -631,7 +623,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -639,7 +633,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -680,7 +678,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -688,7 +688,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -782,7 +786,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -790,7 +796,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
