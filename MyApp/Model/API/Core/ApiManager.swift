@@ -18,13 +18,8 @@ let api = ApiManager()
 
 final class ApiManager {
 
-    let session = Session()
-
     var defaultHTTPHeaders: [String: String] {
-        var headers: [String: String] = [:]
-        if session.credential.isValid {
-            headers["Authorization"] = "\(session.credential)"
-        }
+        let headers: [String: String] = [:]
         return headers
     }
 }

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import RealmSwift
 import AlamofireNetworkActivityIndicator
 
 let networkIndicator = NetworkActivityIndicatorManager.shared
@@ -26,7 +25,6 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         configNetwork()
-        configDatabase()
         return true
     }
 }
@@ -35,13 +33,5 @@ extension AppDelegate {
     fileprivate func configNetwork() {
         networkIndicator.isEnabled = true
         networkIndicator.startDelay = 0
-    }
-
-    fileprivate func configDatabase() {
-        Realm.Configuration.defaultConfiguration = {
-            var config = Realm.Configuration.defaultConfiguration
-            config.deleteRealmIfMigrationNeeded = true
-            return config
-        }()
     }
 }
