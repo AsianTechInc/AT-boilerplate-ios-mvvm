@@ -15,7 +15,6 @@ enum Process {
 }
 
 extension String {
-    var len: Int { return count }
 
     var trimmed: String {
         return trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)

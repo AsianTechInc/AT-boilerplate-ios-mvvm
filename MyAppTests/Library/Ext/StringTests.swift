@@ -10,10 +10,6 @@ import XCTest
 @testable import MyApp
 
 final class StringTests: XCTestCase {
-    func testLen() {
-        XCTAssertEqual("オハヨウゴザイマス".len, 9)
-        XCTAssertEqual("ｵﾊﾖｳｺﾞｻﾞｲﾏｽ".len, 9)
-    }
 
     func testHost() {
         let url = "https://google.com"
