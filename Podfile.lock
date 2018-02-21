@@ -1,43 +1,38 @@
 PODS:
-  - Alamofire (4.3.0)
-  - AlamofireNetworkActivityIndicator (2.1.0):
-    - Alamofire (~> 4.1)
+  - Alamofire (4.6.0)
+  - AlamofireNetworkActivityIndicator (2.2.0):
+    - Alamofire (~> 4.5)
+  - Crashlytics (3.10.0):
+    - Fabric (~> 1.7.3)
+  - Fabric (1.7.3)
   - MVVM-Swift (1.1.0)
-  - ObjectMapper (2.2.6)
-  - Realm (2.8.2):
-    - Realm/Headers (= 2.8.2)
-  - Realm/Headers (2.8.2)
-  - RealmS (2.3.1):
-    - ObjectMapper (~> 2.2)
-    - RealmSwift (~> 2.2)
-  - RealmSwift (2.8.2):
-    - Realm (= 2.8.2)
-  - SAMKeychain (1.5.2)
-  - SwiftLint (0.16.1)
-  - SwiftUtils (2.1.1)
+  - ObjectMapper (3.1.0)
+  - SwiftDate (4.5.0)
+  - SwiftLint (0.25.0)
+  - SwiftUtils (4.0.1)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.3.0)
-  - AlamofireNetworkActivityIndicator (~> 2.1.0)
-  - MVVM-Swift (~> 1.1.0)
-  - ObjectMapper (= 2.2.6)
-  - RealmS (~> 2.3.1)
-  - SAMKeychain (~> 1.5.2)
-  - SwiftLint (~> 0.16.1)
-  - SwiftUtils (~> 2.1.1)
+  - Alamofire (= 4.6.0)
+  - AlamofireNetworkActivityIndicator (= 2.2.0)
+  - Crashlytics
+  - Fabric
+  - MVVM-Swift (= 1.1.0)
+  - ObjectMapper (= 3.1.0)
+  - SwiftDate (= 4.5.0)
+  - SwiftLint (= 0.25.0)
+  - SwiftUtils (= 4.0.1)
 
 SPEC CHECKSUMS:
-  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
-  AlamofireNetworkActivityIndicator: 4716f6554bdfb9c7cf13b1e0e3af21163129690a
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  AlamofireNetworkActivityIndicator: 81e1630e7cfed22a4e4e82a174c59e651dc4f8ca
+  Crashlytics: a989ef242b66605577a425733797f810bd2725eb
+  Fabric: bb495bb9a7a7677c6d03a1f8b83d95bc49b47e41
   MVVM-Swift: 54749cc12bb30af41632f30a2c576a18bf9e4bc8
-  ObjectMapper: '042708195cc46c20871cbcbec0453826398273fd'
-  Realm: 0e262abf087c7054013e00579274f7e070486d4a
-  RealmS: 939afb24205b83c0af75770bcf06347b6e5df0da
-  RealmSwift: 73565e91bc403c1149e4acf31ff9de506b2f9459
-  SAMKeychain: 1865333198217411f35327e8da61b43de79b635b
-  SwiftLint: b8b683208cc09640898f16318a7a452274e91f61
-  SwiftUtils: 3f79be4fec34ac8b7c95d2ec15c9feebe81f1fc1
+  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
+  SwiftDate: 17dd829c004a2d60432ef63ffcdb26ca2eb97a60
+  SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
+  SwiftUtils: b009d391fb2e285392f114238f8b55d2750b80f0
 
-PODFILE CHECKSUM: 4671d006d23de75b9bcd354af4f9b40c651fca3e
+PODFILE CHECKSUM: 03383f24f28d684f9c6477bdc4fc81a840012183
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.4.0

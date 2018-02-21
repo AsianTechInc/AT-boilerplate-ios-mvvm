@@ -2,8 +2,8 @@
 //  ApiManager.swift
 //  MyApp
 //
-//  Created by DaoNV on 4/10/17.
-//  Copyright © 2017 Asian Tech Co., Ltd. All rights reserved.
+//  Created by iOSTeam on 2/21/18.
+//  Copyright © 2018 Asian Tech Co., Ltd. All rights reserved.
 //
 
 import Foundation
@@ -18,13 +18,8 @@ let api = ApiManager()
 
 final class ApiManager {
 
-    let session = Session()
-
     var defaultHTTPHeaders: [String: String] {
-        var headers: [String: String] = [:]
-        if session.credential.isValid {
-            headers["Authorization"] = "\(session.credential)"
-        }
+        let headers: [String: String] = [:]
         return headers
     }
 }

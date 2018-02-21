@@ -2,15 +2,21 @@
 //  Api.swift
 //  MyApp
 //
-//  Created by DaoNV on 4/10/17.
-//  Copyright © 2017 Asian Tech Co., Ltd. All rights reserved.
+//  Created by iOSTeam on 2/21/18.
+//  Copyright © 2018 Asian Tech Co., Ltd. All rights reserved.
 //
 
 import Foundation
 
 final class Api {
     struct Path {
-        static let baseURL = "https://asiantech.vn"
+        #if DEBUG
+            static let baseURL = "https://dev-asiantech.vn"
+        #elseif STG
+            static let baseURL = "https://stg-asiantech.vn"
+        #else
+            static let baseURL = "https://pro-asiantech.vn"
+        #endif
     }
 }
 
@@ -30,7 +36,7 @@ extension Int: URLStringConvertible {
     var urlString: String { return String(describing: self) }
 }
 
-fileprivate func / (lhs: URLStringConvertible, rhs: URLStringConvertible) -> String {
+private func / (lhs: URLStringConvertible, rhs: URLStringConvertible) -> String {
     return lhs.urlString + "/" + rhs.urlString
 }
 

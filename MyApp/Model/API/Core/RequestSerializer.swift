@@ -2,7 +2,7 @@
 //  RequestSerializer.swift
 //  MyApp
 //
-//  Created by DaoNV on 7/8/16.
+//  Created by iOSTeam on 2/21/18.
 //  Copyright © 2016 AsianTech Co., Ltd. All rights reserved.
 //
 

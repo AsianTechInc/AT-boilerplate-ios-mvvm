@@ -1,4 +1,4 @@
-# Swift 3.1, SwiftLint 0.18.0
+# Swift 4.0.3, SwiftLint 0.25.0
 reporter: xcode
 opt_in_rules:
   - force_unwrapping
@@ -41,12 +41,6 @@ type_name:
   max_length:
     warning: 40
     error: 60
-variable_name:
-  min_length:
-    warning: 1
-  max_length:
-    warning: 40
-    error: 60
 identifier_name:
   min_length:
     warning: 1
@@ -65,54 +59,3 @@ custom_rules:
     regex: "(@IBOutletCollection)"
     message: "IBOutletCollection is not permitted. "
     severity: error
-  delegate:
-    name: "delegate"
-    regex: "(\s{2,}var\s+delegate)"
-    message: "Please use \"weak\" for \"delegate\". "
-    severity: error
-  comments_space:
-    name: "Space After Comment"
-    regex: "(^\s*//\w+)"
-    message: "There should be a space after //"
-    severity: warning
-    match_kinds: comment
-  switch_enum:
-    name: "Switch Enum"
-    regex: "(case\s\w+\.+rawValue:)"
-    message: "Do not use enum.rawValue in switch-case. Please convert value to enum first. "
-    severity: warning
-  compile_lookup:
-    name: "Compile Lookup"
-    regex: "((var|let)\s+\w+\s*=\s*\[)"
-    message: "You need to give types to the array and dictionary. "
-    severity: error
-  weak_self_usage:
-    name: "Weak Self Usage"
-    regex: "(self\?\.)"
-    message: "Explicitly extending lifetime is preferred to optional binding. Ex: \"guard let this = self else { return }\". "
-    severity: warning
-  weak_self_binding:
-    name: "Weak Self Binding"
-    regex: "(let\s+(?!this)\w+\s*=\s*self[,\s])"
-    message: "Please use \"let this = self\" or \"let `self` = self\" instead. "
-    severity: warning
-  unowned:
-    name: "Unowned"
-    regex: "(unowned)"
-    message: "Please use \"weak\" instead. "
-    severity: error
-  empty_string:
-    name: "Empty String"
-    regex: "(.length\s*(==|!=|<|<=|>|>=)\s*0)"
-    message: "Please use \"isEmpty\" instead. "
-    severity: error
-  bracket:
-    name: "Bracket"
-    regex: "(\}\n{2,}\}|\{\n{2,}\{)"
-    message: "No empty line between two open or close brackets. "
-    severity: warning
-  query_string:
-    name: "Query String"
-    regex: "(\s+[=!><]+ \\\(.*\))"
-    message: "Donot use the string interpolation syntax for query string. "
-    severity: warning
