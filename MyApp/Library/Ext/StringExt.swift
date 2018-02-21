@@ -2,8 +2,8 @@
 //  String.swift
 //  MyApp
 //
-//  Created by DaoNV on 4/10/17.
-//  Copyright © 2017 Asian Tech Co., Ltd. All rights reserved.
+//  Created by iOSTeam on 2/21/18.
+//  Copyright © 2018 Asian Tech Co., Ltd. All rights reserved.
 //
 
 import Foundation
@@ -15,7 +15,6 @@ enum Process {
 }
 
 extension String {
-    var len: Int { return characters.count }
 
     var trimmed: String {
         return trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)

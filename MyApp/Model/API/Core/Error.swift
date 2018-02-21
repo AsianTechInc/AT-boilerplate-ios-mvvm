@@ -2,8 +2,8 @@
 //  Error.swift
 //  MyApp
 //
-//  Created by DaoNV on 3/7/16.
-//  Copyright © 2017 Asian Tech Co., Ltd. All rights reserved.
+//  Created by iOSTeam on 2/21/18.
+//  Copyright © 2018 Asian Tech Co., Ltd. All rights reserved.
 //
 
 import Foundation
@@ -28,6 +28,10 @@ extension Api {
         static let authen = NSError(domain: Api.Path.baseURL.host, status: HTTPStatus.unauthorized)
         static let json = NSError(domain: NSCocoaErrorDomain, code: 3_840, message: "The operation couldn’t be completed.")
         static let apiKey = NSError(domain: Api.Path.baseURL.host, status: HTTPStatus.badRequest)
+        static let cancelRequest = NSError(domain: Api.Path.baseURL.host, code: 999, message: "Server returns no information and closes the connection.")
+        static let emptyData = NSError(domain: Api.Path.baseURL.host, code: 997, message: "Server returns no data")
+        static let noResponse = NSError(status: .noResponse)
+        static let invalidURL = NSError(domain: Api.Path.baseURL.host, code: 998, message: "Cannot detect URL")
     }
 }
 

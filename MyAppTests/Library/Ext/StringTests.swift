@@ -2,18 +2,14 @@
 //  StringTests.swift
 //  MyApp
 //
-//  Created by DaoNV on 5/8/17.
-//  Copyright © 2017 Asian Tech Co., Ltd. All rights reserved.
+//  Created by iOSTeam on 2/21/18.
+//  Copyright © 2018 Asian Tech Co., Ltd. All rights reserved.
 //
 
 import XCTest
 @testable import MyApp
 
 final class StringTests: XCTestCase {
-    func testLen() {
-        XCTAssertEqual("オハヨウゴザイマス".len, 9)
-        XCTAssertEqual("ｵﾊﾖｳｺﾞｻﾞｲﾏｽ".len, 9)
-    }
 
     func testHost() {
         let url = "https://google.com"

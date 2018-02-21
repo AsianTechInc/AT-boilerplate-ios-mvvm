@@ -32,9 +32,9 @@ Table of Contents
 
 ## Prerequisites
 
-- [MacOS Sierra (10.12.x)](https://www.apple.com/lae/macos/sierra/)
-- [Xcode 8.3.x](https://developer.apple.com/download/) ~ Swift 3.1
-- [CocoaPods 1.2.x](https://cocoapods.org/#install)
+- [MacOS Sierra (10.12.6 or higher)](https://www.apple.com/lae/macos/sierra/)
+- [Xcode 9.2 or higher](https://developer.apple.com/download/) ~ Swift 4.0
+- [CocoaPods 1.4.0 or higher](https://cocoapods.org/#install)
 
 ## Project Structure
 

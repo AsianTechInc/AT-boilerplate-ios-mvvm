@@ -2,14 +2,12 @@
 //  ResponseSerializer.swift
 //  MyApp
 //
-//  Created by DaoNV on 3/7/16.
-//  Copyright © 2017 Asian Tech Co., Ltd. All rights reserved.
+//  Created by iOSTeam on 2/21/18.
+//  Copyright © 2018 Asian Tech Co., Ltd. All rights reserved.
 //
 
 import Alamofire
-import RealmSwift
 import ObjectMapper
-import RealmS
 import SwiftUtils
 
 extension Request {
@@ -18,26 +16,38 @@ extension Request {
                                        data: Data?,
                                        error: Error?) -> Result<Any> {
         guard let response = response else {
-            return .failure(NSError(status: .noResponse))
+            if let error = error {
+                let errorCode = error.code
+                if abs(errorCode) == Api.Error.cancelRequest.code { // code is 999 or -999
+                    return .failure(Api.Error.cancelRequest)
+                }
+                return .failure(error)
+            }
+            return .failure(Api.Error.noResponse)
         }
+
+        let statusCode = response.statusCode
 
         if let error = error {
             return .failure(error)
         }
-
-        let statusCode = response.statusCode
 
         if 204...205 ~= statusCode { // empty data status code
             return .success([:])
         }
 
         guard 200...299 ~= statusCode else {
+            // Cancel request
+            if statusCode == Api.Error.cancelRequest.code {
+                return .failure(Api.Error.cancelRequest)
+            }
+
             var err: NSError!
             if let json = data?.toJSON() as? JSObject,
-                let errors = json["errors"] as? JSArray,
-                !errors.isEmpty,
-                let message = errors[0]["value"] as? String {
-                err = NSError(message: message)
+                let errors = json["errors"] as? [String],
+                !errors.isEmpty {
+                let message = errors.reduce("", { $0 + $1 + "\n" }).trimmed
+                err = NSError(code: statusCode, message: message)
             } else if let status = HTTPStatus(code: statusCode) {
                 err = NSError(domain: Api.Path.baseURL.host, status: status)
             } else {
@@ -45,7 +55,11 @@ extension Request {
                               code: statusCode,
                               message: "Unknown HTTP status code received (\(statusCode)).")
             }
-
+            #if DEBUG
+                print("------------------------")
+                print("Request: \(String(describing: response.url))")
+                print("Error: \(err.code) - \(err.localizedDescription)")
+            #endif
             return .failure(err)
         }
 
