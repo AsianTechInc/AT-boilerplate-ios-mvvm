@@ -65,6 +65,7 @@ Carthage/Build
 fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
+fastlane/README.md
 fastlane/test_output
 
 # Bundler
