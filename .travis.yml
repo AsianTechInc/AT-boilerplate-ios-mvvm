@@ -1,32 +1,14 @@
 language: objective-c
 osx_image: xcode9.2
 cache:
-  bundler: true
-  cocoapods: true
-  directories:
-    - ~/.rbenv
-    - ~/.cocoapods
-    - ~/Library/Caches/CocoaPods
-    - .bundle
-    - vendor
-env:
-  global:
-    - SDK="iphonesimulator11.2"
-    - SCHEME='MyApp'
-    - WORKSPACE='MyApp.xcworkspace'
-    - DESTINATION="OS=11.2,name=iPhone 7"
-    - CONFIGURATION='Debug'
+  - bundler
+  - cocoapods
 install:
   - set -o pipefail
-  - ./scripts/install
+  - sudo systemsetup -settimezone Asia/Ho_Chi_Minh
+  - bundle install --path=vendor/bundle --jobs 4 --retry 3
 script:
-  - export REPO_SLUG="$TRAVIS_REPO_SLUG"
-  - export SRC_BRANCH="$(./scripts/ci/src_branch)"
-  - export PR_NUMBER="$(./scripts/ci/pr_number)"
-  - ./scripts/tests/pod
-  - ./scripts/tests/app
-  - ./scripts/tests/lint
-notifications:
-  email: false
-after_success:
-  - ./scripts/ci/codecov
+  - ./scripts/branch
+  - bundle exec pod install --repo-update
+  - ./scripts/lint 
+  - bundle exec fastlane test  

@@ -1,0 +1,3 @@
+scheme "MyApp"
+devices ["iPhone 6s"]
+clean true
