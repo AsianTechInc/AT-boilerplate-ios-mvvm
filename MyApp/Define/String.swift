@@ -12,7 +12,7 @@
  */
 
 import Foundation
-import SwiftUtils
+import SwifterSwift
 
 extension App {
     struct String {

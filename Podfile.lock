@@ -1,38 +1,61 @@
 PODS:
-  - Alamofire (4.6.0)
-  - AlamofireNetworkActivityIndicator (2.2.0):
-    - Alamofire (~> 4.5)
-  - Crashlytics (3.10.0):
-    - Fabric (~> 1.7.3)
-  - Fabric (1.7.3)
+  - Alamofire (4.9.1)
+  - AlamofireNetworkActivityIndicator (2.4.0):
+    - Alamofire (~> 4.8)
   - MVVM-Swift (1.1.0)
-  - ObjectMapper (3.1.0)
-  - SwiftDate (4.5.0)
-  - SwiftLint (0.25.0)
-  - SwiftUtils (4.0.1)
+  - ObjectMapper (3.5.1)
+  - SwiftDate (6.1.0)
+  - SwifterSwift (5.1.0):
+    - SwifterSwift/AppKit (= 5.1.0)
+    - SwifterSwift/CoreGraphics (= 5.1.0)
+    - SwifterSwift/CoreLocation (= 5.1.0)
+    - SwifterSwift/Dispatch (= 5.1.0)
+    - SwifterSwift/Foundation (= 5.1.0)
+    - SwifterSwift/MapKit (= 5.1.0)
+    - SwifterSwift/SceneKit (= 5.1.0)
+    - SwifterSwift/SpriteKit (= 5.1.0)
+    - SwifterSwift/SwiftStdlib (= 5.1.0)
+    - SwifterSwift/UIKit (= 5.1.0)
+  - SwifterSwift/AppKit (5.1.0)
+  - SwifterSwift/CoreGraphics (5.1.0)
+  - SwifterSwift/CoreLocation (5.1.0)
+  - SwifterSwift/Dispatch (5.1.0)
+  - SwifterSwift/Foundation (5.1.0)
+  - SwifterSwift/MapKit (5.1.0)
+  - SwifterSwift/SceneKit (5.1.0)
+  - SwifterSwift/SpriteKit (5.1.0)
+  - SwifterSwift/SwiftStdlib (5.1.0)
+  - SwifterSwift/UIKit (5.1.0)
+  - SwiftLint (0.38.0)
 
 DEPENDENCIES:
-  - Alamofire (= 4.6.0)
-  - AlamofireNetworkActivityIndicator (= 2.2.0)
-  - Crashlytics
-  - Fabric
-  - MVVM-Swift (= 1.1.0)
-  - ObjectMapper (= 3.1.0)
-  - SwiftDate (= 4.5.0)
-  - SwiftLint (= 0.25.0)
-  - SwiftUtils (= 4.0.1)
+  - Alamofire
+  - AlamofireNetworkActivityIndicator
+  - MVVM-Swift
+  - ObjectMapper
+  - SwiftDate
+  - SwifterSwift
+  - SwiftLint
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - AlamofireNetworkActivityIndicator
+    - MVVM-Swift
+    - ObjectMapper
+    - SwiftDate
+    - SwifterSwift
+    - SwiftLint
 
 SPEC CHECKSUMS:
-  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
-  AlamofireNetworkActivityIndicator: 81e1630e7cfed22a4e4e82a174c59e651dc4f8ca
-  Crashlytics: a989ef242b66605577a425733797f810bd2725eb
-  Fabric: bb495bb9a7a7677c6d03a1f8b83d95bc49b47e41
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireNetworkActivityIndicator: 9acc3de3ca6645bf0efed462396b0df13dd3e7b8
   MVVM-Swift: 54749cc12bb30af41632f30a2c576a18bf9e4bc8
-  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
-  SwiftDate: 17dd829c004a2d60432ef63ffcdb26ca2eb97a60
-  SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
-  SwiftUtils: b009d391fb2e285392f114238f8b55d2750b80f0
+  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  SwiftDate: fa2bb3962056bb44047b4b85a30044e5eae30b03
+  SwifterSwift: a9e8e144832638c2850b43da5feaf9598c6ad65b
+  SwiftLint: 4105f061f9812b214568b736dab580ab2c73a582
 
-PODFILE CHECKSUM: 03383f24f28d684f9c6477bdc4fc81a840012183
+PODFILE CHECKSUM: 08e4a1030e00b1d93cb77ae1b6d6d2b4c8677411
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.8.4

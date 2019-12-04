@@ -21,7 +21,7 @@ class Button: UIButton {
 
     private func configView() {
         titleLabel?.font = App.Font.buttonTextLabel
-        for state: UIControlState in [.normal, .highlighted, .selected, .disabled] {
+        for state: UIControl.State in [.normal, .highlighted, .selected, .disabled] {
             setTitleColor(App.Color.button(state: state), for: state)
         }
     }

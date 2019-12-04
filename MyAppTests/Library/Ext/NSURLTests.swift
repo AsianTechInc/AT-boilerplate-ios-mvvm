@@ -7,7 +7,6 @@
 //
 
 import XCTest
-import SwiftUtils
 
 @testable import MyApp
 

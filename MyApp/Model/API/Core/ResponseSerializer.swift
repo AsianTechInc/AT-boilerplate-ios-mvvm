@@ -8,7 +8,6 @@
 
 import Alamofire
 import ObjectMapper
-import SwiftUtils
 
 extension Request {
     static func responseJSONSerializer(log: Bool = true,
