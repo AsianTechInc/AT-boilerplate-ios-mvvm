@@ -34,12 +34,12 @@ extension String {
 extension String {
 
     /// Initializes an NSURL object with a provided URL string. (read-only)
-    public var url: URL? {
+    var url: URL? {
         return URL(string: self)
     }
 
     /// The host, conforming to RFC 1808. (read-only)
-    public var host: String {
+    var host: String {
         if let url = url, let host = url.host {
             return host
         }

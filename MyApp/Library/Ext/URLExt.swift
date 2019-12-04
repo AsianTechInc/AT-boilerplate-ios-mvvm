@@ -10,7 +10,7 @@ import Foundation
 
 extension URL {
 
-    public var imageRequest: NSMutableURLRequest {
+    var imageRequest: NSMutableURLRequest {
         let request = NSMutableURLRequest(url: self)
         request.addValue("image/*", forHTTPHeaderField: "Accept")
         return request

@@ -8,7 +8,7 @@
 
 import Foundation
 
-public enum HTTPStatus: Int {
+enum HTTPStatus: Int {
     // Informational 1xx
     case `continue` = 100
     case switchingProtocols = 101
@@ -96,17 +96,17 @@ public enum HTTPStatus: Int {
     case networkReadTimeout = 598
     case networkConnectTimeout = 599
 
-    public init?(code: Int) {
+    init?(code: Int) {
         self.init(rawValue: code)
     }
 
-    public var code: Int {
+    var code: Int {
         return rawValue
     }
 }
 
 extension HTTPStatus: CustomStringConvertible {
-    public var description: String {
+    var description: String {
         switch self {
         case .continue: // 100
             return "The server has received the request headers, and the client should proceed to send the request body."

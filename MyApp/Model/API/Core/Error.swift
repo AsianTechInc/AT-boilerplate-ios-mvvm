@@ -40,7 +40,7 @@ extension Error {
         self.show()
     }
 
-    public var code: Int {
+    var code: Int {
         let `self` = self as NSError
         return self.code
     }
