@@ -1,5 +1,5 @@
 //
-//  NSURLTests.swift
+//  URLTests.swift
 //  MyApp
 //
 //  Created by iOSTeam on 2/21/18.
@@ -10,7 +10,7 @@ import XCTest
 
 @testable import MyApp
 
-final class NSURLTests: XCTestCase {
+final class URLTests: XCTestCase {
     func testInit() {
         for code in 100..<600 {
             guard let status = HTTPStatus(code: code) else { continue }
