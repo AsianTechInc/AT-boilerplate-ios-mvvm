@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SwiftUtils
 
 extension UIViewController {
     func alert(error: Error) {

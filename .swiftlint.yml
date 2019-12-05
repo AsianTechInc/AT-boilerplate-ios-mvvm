@@ -1,4 +1,4 @@
-# Swift 4.0.3, SwiftLint 0.25.0
+# Swift 5, SwiftLint 0.38.0
 reporter: xcode
 opt_in_rules:
   - force_unwrapping

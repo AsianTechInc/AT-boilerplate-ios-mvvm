@@ -8,7 +8,6 @@
 
 import Foundation
 import Alamofire
-import SwiftUtils
 
 typealias Network = NetworkReachabilityManager
 
@@ -41,7 +40,7 @@ extension Error {
         self.show()
     }
 
-    public var code: Int {
+    var code: Int {
         let `self` = self as NSError
         return self.code
     }
