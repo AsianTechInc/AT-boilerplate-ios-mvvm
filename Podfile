@@ -27,8 +27,8 @@ target 'MyApp' do
 
     # Utils
     pod 'SwiftLint' # A tool to enforce Swift style and conventions.
-    pod 'SwiftDate' # The best way to manage Dates and Timezones in Swift.
-    pod 'SwifterSwift'
+    pod 'SwiftDate', '5.1.0' # The best way to manage Dates and Timezones in Swift.
+    pod 'SwifterSwift', '4.6.0'
 
     # pod 'AsyncSwift', '2.0.4' # Syntactic sugar in Swift for asynchronous dispatches in Grand Central Dispatch.
     # pod 'SwiftyUserDefaults', '3.0.1' # Modern Swift API for NSUserDefaults.
