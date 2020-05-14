@@ -9,9 +9,9 @@
 import UIKit
 
 extension UITextView {
-    var string: String { return text ?? "" }
+    var wrapedText: String { return text ?? "" }
 }
 
 extension UITextField {
-    var string: String { return text ?? "" }
+    var wrapedText: String { return text ?? "" }
 }
