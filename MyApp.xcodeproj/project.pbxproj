@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04E0C9BF246CD78600C63CCA /* OptionalExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E0C9BE246CD78600C63CCA /* OptionalExt.swift */; };
+		04E0C9DC246D1D9F00C63CCA /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E0C9DB246D1D9F00C63CCA /* Environment.swift */; };
 		6C76732AD556AFFA0E804B5D /* Pods_MyApp_MyAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57FE3A3D60443397A76417EC /* Pods_MyApp_MyAppTests.framework */; };
 		D74FA8CEC4FE352BAC2A4FFE /* Pods_MyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8C5382905DDE3475797CD0 /* Pods_MyApp.framework */; };
 		EC0105521E8F8AE000CE013D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC0105401E8F8ADF00CE013D /* Assets.xcassets */; };
@@ -69,6 +70,7 @@
 		04E0C9C1246CDB0000C63CCA /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		04E0C9C3246CDB2100C63CCA /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
 		04E0C9C4246CDB4100C63CCA /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
+		04E0C9DB246D1D9F00C63CCA /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		1F64C9A2BF91B0806B7591A6 /* Pods-MyApp-MyAppTests.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyApp-MyAppTests.production.xcconfig"; path = "Target Support Files/Pods-MyApp-MyAppTests/Pods-MyApp-MyAppTests.production.xcconfig"; sourceTree = "<group>"; };
 		297158976088C492DCDD1466 /* Pods-MyApp.staging-inhouse.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyApp.staging-inhouse.xcconfig"; path = "Target Support Files/Pods-MyApp/Pods-MyApp.staging-inhouse.xcconfig"; sourceTree = "<group>"; };
 		57FE3A3D60443397A76417EC /* Pods_MyApp_MyAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyApp_MyAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +141,7 @@
 		04E0C9C0246CDAE500C63CCA /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				04E0C9DB246D1D9F00C63CCA /* Environment.swift */,
 				04E0C9D2246CDEFE00C63CCA /* Development */,
 				04E0C9D3246CDF0700C63CCA /* Staging */,
 				04E0C9D4246CDF0E00C63CCA /* Production */,
@@ -434,7 +437,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 1120;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Asian Tech Co., Ltd.";
 				TargetAttributes = {
 					ECCCCB171E7A40D00073D923 = {
@@ -615,6 +618,7 @@
 				ECEC0C5E1ED44D7700F6760A /* MapperExt.swift in Sources */,
 				EC5337B71EF78CD800ACE038 /* App.swift in Sources */,
 				ECC5B2CD1EF906CA001A97BC /* ViewController.swift in Sources */,
+				04E0C9DC246D1D9F00C63CCA /* Environment.swift in Sources */,
 				EC5337C31EF793B100ACE038 /* CollectionCell.swift in Sources */,
 				ECF23ABA1E9B89B2008C23C1 /* RequestSerializer.swift in Sources */,
 				ECC5B2CB1EF90495001A97BC /* Button.swift in Sources */,
