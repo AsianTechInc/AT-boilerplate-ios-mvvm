@@ -1,0 +1,12 @@
+//
+//  Pro.xcconfig
+//  MyApp
+//
+//  Created by Dai Ho V. on 5/14/20.
+//  Copyright © 2020 Asian Tech Co., Ltd. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+BASE_URL = http:/$()/pro-asiantech.vn

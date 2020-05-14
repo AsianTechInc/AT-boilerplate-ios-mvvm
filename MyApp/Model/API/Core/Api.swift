@@ -10,13 +10,7 @@ import Foundation
 
 final class Api {
     struct Path {
-        #if DEBUG
-            static let baseURL = "https://dev-asiantech.vn"
-        #elseif STG
-            static let baseURL = "https://stg-asiantech.vn"
-        #else
-            static let baseURL = "https://pro-asiantech.vn"
-        #endif
+        static let baseURL = Environment.baseURL
     }
 }
 

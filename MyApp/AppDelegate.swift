@@ -30,7 +30,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 extension AppDelegate {
-    fileprivate func configNetwork() {
+    private func configNetwork() {
         networkIndicator.isEnabled = true
         networkIndicator.startDelay = 0
     }

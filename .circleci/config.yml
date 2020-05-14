@@ -1,0 +1,58 @@
+version: 2.1
+jobs:
+  build-and-test:
+    macos:
+      xcode: 11.4.0
+    environment:
+      FL_OUTPUT_DIR: output
+      FASTLANE_LANE: test
+    steps:
+      - run:
+          name: Switch timezone to Ho Chi Minh
+          command: sudo systemsetup -settimezone Asia/Ho_Chi_Minh
+      - checkout
+      - run:
+          name: Bundle install
+          command: bundle install
+      - run:
+          name: Install cocoapods
+          command: bundle exec pod install
+      - run:
+          name: Check Swiftlint
+          command: ./Pods/SwiftLint/swiftlint --reporter json > swiftlint-report.json || false
+      - run:
+          name: Report to github
+          command: if [ -z ${CIRCLE_PULL_REQUEST+x} ]; then echo "Not is a pull request"; else bundle exec linterbot $CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME $(basename $CIRCLE_PULL_REQUEST) -f swiftlint-report.json; fi
+      - run:
+          name: Fastlane
+          command: bundle exec fastlane $FASTLANE_LANE
+      - store_artifacts:
+          path: output
+      - store_test_results:
+          path: output/scan
+
+  adhoc:
+    macos:
+      xcode: 11.3.0
+    environment:
+      FL_OUTPUT_DIR: output
+      FASTLANE_LANE: adhoc
+    steps:
+      - checkout
+      - run: bundle install
+      - run:
+          name: Fastlane
+          command: bundle exec fastlane $FASTLANE_LANE
+      - store_artifacts:
+          path: output
+
+workflows:
+  build-test-adhoc:
+    jobs:
+      - build-and-test
+      - adhoc:
+          filters:
+            branches:
+              only: develop
+          requires:
+            - build-and-test

@@ -3,34 +3,22 @@ PODS:
   - AlamofireNetworkActivityIndicator (2.4.0):
     - Alamofire (~> 4.8)
   - MVVM-Swift (1.1.0)
-  - ObjectMapper (3.5.1)
-  - SwiftDate (5.1.0)
-  - SwifterSwift (4.6.0):
-    - SwifterSwift/AppKit (= 4.6.0)
-    - SwifterSwift/CoreGraphics (= 4.6.0)
-    - SwifterSwift/CoreLocation (= 4.6.0)
-    - SwifterSwift/Foundation (= 4.6.0)
-    - SwifterSwift/MapKit (= 4.6.0)
-    - SwifterSwift/SpriteKit (= 4.6.0)
-    - SwifterSwift/SwiftStdlib (= 4.6.0)
-    - SwifterSwift/UIKit (= 4.6.0)
-  - SwifterSwift/AppKit (4.6.0)
-  - SwifterSwift/CoreGraphics (4.6.0)
-  - SwifterSwift/CoreLocation (4.6.0)
-  - SwifterSwift/Foundation (4.6.0)
-  - SwifterSwift/MapKit (4.6.0)
-  - SwifterSwift/SpriteKit (4.6.0)
-  - SwifterSwift/SwiftStdlib (4.6.0)
-  - SwifterSwift/UIKit (4.6.0)
-  - SwiftLint (0.38.0)
+  - ObjectMapper (3.5.2)
+  - SwiftDate (6.1.0)
+  - SwifterSwift/Foundation (5.1.0)
+  - SwifterSwift/SwiftStdlib (5.1.0)
+  - SwifterSwift/UIKit (5.1.0)
+  - SwiftLint (0.39.2)
 
 DEPENDENCIES:
   - Alamofire
   - AlamofireNetworkActivityIndicator
   - MVVM-Swift
   - ObjectMapper
-  - SwiftDate (= 5.1.0)
-  - SwifterSwift (= 4.6.0)
+  - SwiftDate (= 6.1.0)
+  - SwifterSwift/Foundation (= 5.1.0)
+  - SwifterSwift/SwiftStdlib (= 5.1.0)
+  - SwifterSwift/UIKit (= 5.1.0)
   - SwiftLint
 
 SPEC REPOS:
@@ -47,11 +35,11 @@ SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   AlamofireNetworkActivityIndicator: 9acc3de3ca6645bf0efed462396b0df13dd3e7b8
   MVVM-Swift: 54749cc12bb30af41632f30a2c576a18bf9e4bc8
-  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
-  SwiftDate: 6329e58969a2de31cea7f1ee1143b247693196e7
-  SwifterSwift: 812ffec6f301922f5430e75be3f2939ea3a80024
-  SwiftLint: 4105f061f9812b214568b736dab580ab2c73a582
+  ObjectMapper: b53ae947d370bf89423e86be7d4e2d2b2a8d3f40
+  SwiftDate: fa2bb3962056bb44047b4b85a30044e5eae30b03
+  SwifterSwift: a9e8e144832638c2850b43da5feaf9598c6ad65b
+  SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
 
-PODFILE CHECKSUM: a65608f9aa1bb371ff0bc6de2b8e69fd55d3bd62
+PODFILE CHECKSUM: cbeea2c8e9ff38cbc776293a5c52aa8bc1d2249f
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1

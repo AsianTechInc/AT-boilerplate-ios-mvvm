@@ -25,8 +25,4 @@ final class StringTests: XCTestCase {
         XCTAssertEqual("fooba".base64(.encode), "Zm9vYmE=")
         XCTAssertEqual("foobar".base64(.encode), "Zm9vYmFy")
     }
-
-    func testTrimmed() {
-        XCTAssertEqual("  Ok,  fine!  ".trimmed, "Ok,  fine!")
-    }
 }

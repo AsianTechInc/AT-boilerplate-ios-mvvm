@@ -6,11 +6,11 @@
 //  Copyright © 2018 Asian Tech Co., Ltd. All rights reserved.
 //
 
-/**
+/*
  This file defines all fonts which are used in this application.
  Please navigate by the control as prefix.
  Please create base class for automatic font loading.
- */
+*/
 
 import UIKit
 
